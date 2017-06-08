@@ -48,7 +48,7 @@ public class TinyURL {
 	}
 	
 	/** Find original url by iterating through table to find tinyurl */
-	public static String getUrlByIterate(String tinyurl) {
+	public static String getURLByIterate(String tinyurl) {
 		tinyurl = tinyurl.substring(tinyurl.length()-6);
 		if(!urlToTiny.contains(tinyurl)) {
 			return null;
@@ -62,8 +62,8 @@ public class TinyURL {
 		return url;
 	}
 	
-	/** Find original url by searching second hashtable where the key is the tinyurl*/
-	public static String getUrlByTable(String tinyurl) {
+	/** Find original url by searching second hashtable where the key is the tinyurl */
+	public static String getURLByTable(String tinyurl) {
 		return tinyToUrl.get(tinyurl.substring(tinyurl.length()-6));
 	}
 
